@@ -119,4 +119,7 @@ def continue_or_quit(message):
   browser.quit()
   browser.stop_client()
 
-bot.polling(none_stop=True)
+#bot.polling(none_stop=True)
+
+#if __name__ == '__main__':
+  #bot.infinity_polling()
