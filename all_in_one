@@ -119,7 +119,15 @@ def continue_or_quit(message):
   browser.quit()
   browser.stop_client()
 
+while True:
+  try:
+    bot.polling(none_stop=True,timeout=60,interval=10)
+    break
+  except Exception as e:
+    logging.exception(e)
+    sleep(10)
+    continue
 #bot.polling(none_stop=True)
-
+  
 #if __name__ == '__main__':
   #bot.infinity_polling()
